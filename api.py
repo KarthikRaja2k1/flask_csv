@@ -123,10 +123,6 @@ class TodoDAO(object):
 
 
 DAO = TodoDAO()
-DAO.create({'task': 'Build an API','dueby':'20190102','status':'in progress'})
-DAO.create({'task': '?????','dueby':'20190102','status':'in progress'})
-DAO.create({'task': 'profit!','dueby':'20190102','status':'in progress'})
-
 
 @ns.route('/')
 class TodoList(Resource):
