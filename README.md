@@ -6,6 +6,8 @@ Prerquisites
 	1)Flask=1.1.2
 	2)flask-restplus=0.13.0
 	3)pandas
+else 
+ can use the activate the env from within scripts
 
 
 #Part_1
