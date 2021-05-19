@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+
+#idiv{
+padding:20px;
+}
+
+</style>
+
+<body>
+<p style="font-weight:bold;font-size:30px;">User Page</p>
+<a href="/Seeall" target="search_iframe"><button>See All</button></a>
+<a href="/Dueby" target="search_iframe"><button>Search unfinished tasks by date</button></a>
+<a href="/Overdue" target="search_iframe"><button>over due</button></a>
+<a href="/Finished" target="search_iframe"><button>Finished</button></a>
+<a href="/Create" target="search_iframe"><button>Insert</button></a>
+<a href="/Update" target="search_iframe"><button>Update_staus</button></a>
+<a href="/Delete" target="search_iframe"><button>Delete</button></a>
+<a href="/Logout" target="search_iframe"><button>Logout</button></a>
+
+<div id='idiv'>
+<iframe src="/Seeall" style="position:fixed; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;" name="search_iframe"></iframe>
+</div>
+</body>
+</html>	

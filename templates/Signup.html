@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script>
+         
+            function checkPassword(form) {
+                password1 = form.psw.value;
+                password2 = form.pswrepeat.value;
+  
+              
+              if (password1 != password2) {
+                    alert ("\nPassword did not match: Please try again...")
+                    return false;
+                }
+                else{
+                   
+                    return true;
+                }
+            }
+        </script>
+</head>
+<body>
+
+<h2> Signup Form</h2>
+
+
+
+ 
+  <form class="form1" onSubmit = "return checkPassword(this)" method="post">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="UserName"><b>UserName</b></label>
+      <input type="text" placeholder="Enter username" name="username" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="pswrepeat" required>
+ 
+		
+	   <label><b>Mode 0-readonly 1-write</b></label>
+      <input type="number" placeholder="Enter mode" name="mode" required>
+
+      
+        <button type="submit" class="signupbtn">Sign Up</button>
+
+  </form>
+</div>
